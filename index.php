@@ -8,8 +8,10 @@ function gcd($entier1,$entier2) {
 }
 
 //Il faut $Param1 > $Param2
-$Param1=56952;
-$Param2=3444;
+//$Param1=56952;
+//$Param2=3444;
+$Param1=15;
+$Param2=2;
 try
 {
     if(!(is_integer($Param1) OR is_integer($Param2)))
@@ -30,10 +32,10 @@ try
         echo $Param1 ;
 
         /**
-         * METHODE 2
+         * METHODE 2 AVEC RECURSIVITE
          */
 
-//        echo "Le PGCD de $Param1 et $Param2 est : ".gcd($Param1, $Param2);
+        //echo "Le PGCD de $Param1 et $Param2 est : ".gcd($Param1, $Param2);
     }
 }catch(Exception $except) {
     echo $except->getMessage();
