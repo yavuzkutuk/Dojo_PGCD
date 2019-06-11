@@ -1,22 +1,22 @@
 <?php
 //Il faut $A > $B
-$A=10;
-$B=3;
+$Param1=56952;
+$Param2=3444;
 try
 {
-    if(!(is_integer($A) OR is_integer($b)))
+    if(!(is_integer($Param1) OR is_integer($Param2)))
     {
         throw new Exception("Nombre(s) non entiers !",99);
     }else{
-        echo "Le PGCD de $A et $B est : ";
+        echo "Le PGCD de $Param1 et $Param2 est : ";
         do
         {
-            $R=$A%$B;
-            $A=$B;
-            $B=$R;
+            $ParamR=$Param1%$Param2;
+            $Param1=$Param2;
+            $Param2=$ParamR;
         }
-        while($R!=0);
-        echo $A ;
+        while($ParamR!=0);
+        echo $Param1 ;
     }
 }catch(Exception $except) {
     echo $except->getMessage();
