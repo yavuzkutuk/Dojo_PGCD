@@ -1,5 +1,5 @@
 <?php
-//Il faut $A > $B
+//Il faut $Param1 > $Param2
 $Param1=56952;
 $Param2=3444;
 try
